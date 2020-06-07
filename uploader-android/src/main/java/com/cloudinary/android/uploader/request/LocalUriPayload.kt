@@ -8,7 +8,7 @@ import com.cloudinary.upload.request.Payload
 import java.io.File
 import java.io.InputStream
 
-internal class LocalUriPayload(private val context: Context, internal val uri: Uri) : Payload<InputStream> {
+class LocalUriPayload(private val context: Context, internal val uri: Uri) : Payload<InputStream> {
     private val safeScheme: String
     private val safePath: String
 
